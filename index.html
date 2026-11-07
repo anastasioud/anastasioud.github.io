@@ -78,6 +78,9 @@ h1,h2,h3{text-wrap:balance}
 .hero-role a:hover{color:var(--wax);border-color:var(--wax)}
 h1{font-family:var(--display);font-weight:500;font-size:var(--s4);line-height:.96;letter-spacing:-.012em;margin:0}
 .hero-claim{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1.5rem,2.7vw,2.25rem);line-height:1.2;color:var(--wax);margin:24px 0 14px}
+.hero-keywords{list-style:none;padding:0;margin:26px 0 0 -15px;overflow:hidden;display:flex;flex-wrap:wrap;row-gap:6px;font-family:var(--text);font-weight:600;font-size:clamp(1rem,1.35vw,1.125rem);color:var(--wax);line-height:1.3}
+.hero-keywords li{padding:0 14px;margin-left:-1px;border-left:1px solid var(--rule)}
+.hero-keywords + .hero-claim{margin-top:14px}
 .hero-lede{max-width:50ch;color:var(--ink-2);margin:0 0 30px;font-size:1.0625rem}
 .profiles{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
 .profiles a{display:inline-block;padding:8px 15px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:.875rem;color:var(--ink);transition:border-color .2s,color .2s}
@@ -251,7 +254,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <div class="hero-text">
         <p class="hero-role">Assistant Professor of Corporate Finance<br><a href="https://aueb.gr/en/faculty_page/anastasiou-dimitrios-0">Athens University of Economics and Business</a></p>
         <h1>Dimitris I.<br>Anastasiou</h1>
-        <p class="hero-claim">How beliefs move money.</p>
+        <ul class="hero-keywords" aria-label="Research interests"><li>Empirical Banking</li><li>Corporate Finance</li><li>Behavioral Finance</li></ul>
+        <p class="hero-claim">How beliefs move the markets.</p>
         <p class="hero-lede">I study how sentiment, uncertainty and risk shape the decisions of depositors, borrowers and banks, with a focus on European banking and the financing of small and medium-sized firms.</p>
         <ul class="profiles">
           <li class="lead-link"><a href="https://www.aueb.gr/sites/default/files/aueb/prosopiko/biographika/CV%20ANASTASIOU.pdf">Curriculum vitae</a></li>
