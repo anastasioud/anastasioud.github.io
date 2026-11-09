@@ -487,7 +487,7 @@ function link(p){ return p.doi ? `https://doi.org/${p.doi}` : (p.url || ""); }
     [published.length, `journal articles published${forthcoming.length ? `, plus ${forthcoming.length} forthcoming` : ""}`],
     [journals.size, "journals"],
     [co.size, "co-authors"],
-    ["1,827", "citations on Google Scholar, h‑index 20 (November 2026)"]
+    ["1,829", "citations on Google Scholar, h‑index 20 (November 2026)"]
   ];
   $("#ledger").innerHTML = items.map(([v, l, cls]) => `<div><dt>${l}</dt><dd${cls ? ` class="${cls}"` : ""}>${v}</dd></div>`).join("");
 })();
