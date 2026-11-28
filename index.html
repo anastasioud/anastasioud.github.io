@@ -107,7 +107,6 @@ h1{font-family:var(--display);font-weight:500;font-size:var(--s4);line-height:.9
 .section-head h2{font-family:var(--display);font-weight:500;font-size:var(--s3);line-height:1.05;margin:0 0 10px}
 .section-head p{margin:0;color:var(--ink-2);font-size:.9375rem;line-height:1.5}
 .prose p{max-width:66ch;margin:0 0 1.05em}
-.prose p:first-child{font-size:1.1875rem;line-height:1.55;color:var(--ink)}
 .prose p:last-child{margin-bottom:0}
 
 /* research themes */
@@ -538,7 +537,7 @@ function link(p){ return p.doi ? `https://doi.org/${p.doi}` : (p.url || ""); }
     [published.length, `journal articles published${forthcoming.length ? `, plus ${forthcoming.length} forthcoming` : ""}`],
     [journals.size, "journals"],
     [co.size, "co-authors"],
-    ["1,840", "citations on Google Scholar, h‑index 20 (November 2026)"]
+    (new Date() >= new Date(2026, 11, 1) ? ["1,850", "citations on Google Scholar, h‑index 20 (December 2026)"] : ["1,840", "citations on Google Scholar, h‑index 20 (November 2026)"])
   ];
   $("#ledger").innerHTML = items.map(([v, l, cls]) => `<div><dt>${l}</dt><dd${cls ? ` class="${cls}"` : ""}>${v}</dd></div>`).join("");
 })();
